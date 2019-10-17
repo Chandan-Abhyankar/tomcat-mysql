@@ -33,8 +33,8 @@ private String getResultSet(java.sql.ResultSet resultSet, boolean displayTables)
 	// For MySQL
 	Class.forName("com.mysql.jdbc.Driver");
 	String showTables = "show tables";
-
-
+	out.println("Hello JDBC_URL");
+	out.println("Hello JDBC_USER");
 	String jdbcUrl = System.getProperty("JDBC_URL");
 	String jdbcUser = System.getProperty("JDBC_USER");
 	String jdbcPass = System.getProperty("JDBC_PASS");
