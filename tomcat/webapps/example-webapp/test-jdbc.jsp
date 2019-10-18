@@ -35,7 +35,8 @@ private String getResultSet(java.sql.ResultSet resultSet, boolean displayTables)
 	String showTables = "show tables";
 	out.println("Hello JDBC_URL");
 	out.println("Hello JDBC_USER");
-	String jdbcUrl = System.getProperty("JDBC_URL");
+	//String jdbcUrl = System.getProperty("JDBC_URL");
+	String jdbcUrl = "jdbc:mysql://ca-mysql:3306/example_db?connectTimeout=0&amp;socketTimeout=0&amp;autoReconnect=true";
 	String jdbcUser = System.getProperty("JDBC_USER");
 	String jdbcPass = System.getProperty("JDBC_PASS");
 
